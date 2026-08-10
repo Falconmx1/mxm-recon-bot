@@ -1,9 +1,33 @@
-# Core dependencies
-Flask>=2.0.0
-PyGithub>=2.0.0
-python-dotenv>=1.0.0
-requests>=2.28.0
+# === Core Framework ===
+Flask==2.3.3
+gunicorn==21.2.0  # Para producción
 
-# Utilities
-PyYAML>=6.0
-click>=8.0.0
+# === GitHub Integration ===
+PyGithub==2.1.1
+python-dotenv==1.0.0
+
+# === Utilities ===
+PyYAML==6.0.1
+click==8.1.7
+requests==2.31.0
+
+# === Webhook Security ===
+# (Flask ya incluye su propio manejo, pero estas son útiles)
+itsdangerous==2.1.2
+
+# === Testing ===
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# === Development ===
+# (Opcional, para desarrollo local)
+watchdog==3.0.0  # Recarga automática en desarrollo
+
+# === Logging & Monitoring ===
+# (Opcional, para mejor manejo de logs)
+python-json-logger==2.0.7
+
+# === Asynchronous Tasks (Opcional, para ejecuciones largas) ===
+# celery==5.3.4  # Descomentar si usas colas de tareas
+# redis==5.0.1   # Descomentar si usas Redis
